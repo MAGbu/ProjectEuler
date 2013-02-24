@@ -1,0 +1,18 @@
+public class multiplesThreeFiveSum{
+  public static void maint(String args[]){
+    int[] fiveAndThreeMultiples = new int[500];
+    int[] threeMultiples = new int[500];
+    int sum = 0;
+    for(int i = 0; i < 1000; i++){
+      boolean isFive = true;
+      if(1%5 == 0){
+        sum+=i;
+      }else{
+        isFive = false;
+      }
+      if(1%3 == 0 && !isFive){
+        sum += i;
+      }
+    }
+  }
+}
